@@ -1,6 +1,6 @@
 //
-//  FlowAction.swift
-//  AppFlow
+//  FeatureFlowEvent.swift
+//  FeatureFlow
 //
 //  Created by Pavel Marchanka on 6/24/19.
 //  Copyright © 2019 Pavel Marchanka. All rights reserved.
@@ -8,17 +8,15 @@
 
 import Foundation
 
-public protocol FlowAction {}
+public protocol FeatureFlowEvent {}
 
-public protocol FlowInputAction: FlowAction {}
-
-public protocol FlowOutputAction: FlowAction {
-    func isEqualTo(_ other: FlowOutputAction) -> Bool
+public protocol FeatureFlowCommand {
+    func isEqualTo(_ other: FeatureFlowCommand) -> Bool
     func asEquatable() -> AnyEquatableAction
 }
 
-extension FlowOutputAction where Self: Equatable {
-    public func isEqualTo(_ other: FlowOutputAction) -> Bool {
+extension FeatureFlowCommand where Self: Equatable {
+    public func isEqualTo(_ other: FeatureFlowCommand) -> Bool {
         guard let otherX = other as? Self else { return false }
         return self == otherX
     }
@@ -28,13 +26,13 @@ extension FlowOutputAction where Self: Equatable {
     }
 }
 
-public struct AnyEquatableAction: FlowOutputAction, Equatable {
-    init(_ value: FlowOutputAction) { self.value = value }
+public struct AnyEquatableAction: FeatureFlowCommand, Equatable {
+    init(_ value: FeatureFlowCommand) { self.value = value }
     
     public static func ==(lhs: AnyEquatableAction, rhs: AnyEquatableAction) -> Bool {
         return lhs.value.isEqualTo(rhs.value)
     }
     
-    private let value: FlowOutputAction
+    private let value: FeatureFlowCommand
 }
 

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D32D252F042A42E89251D77B94453673"
-               BuildableName = "Pods_AppFlowTests.framework"
-               BlueprintName = "Pods-AppFlowTests"
+               BlueprintIdentifier = "89FF9C21DC8BBE73D82F79F21826578E"
+               BuildableName = "Pods_FeatureFlowTests.framework"
+               BlueprintName = "Pods-FeatureFlowTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D32D252F042A42E89251D77B94453673"
-            BuildableName = "Pods_AppFlowTests.framework"
-            BlueprintName = "Pods-AppFlowTests"
+            BlueprintIdentifier = "89FF9C21DC8BBE73D82F79F21826578E"
+            BuildableName = "Pods_FeatureFlowTests.framework"
+            BlueprintName = "Pods-FeatureFlowTests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

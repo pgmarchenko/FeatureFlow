@@ -1,6 +1,6 @@
 //
-//  Array+FlowOutputAction.swift
-//  AppFlow
+//  Array+FeatureFlowCommand.swift
+//  FeatureFlow
 //
 //  Created by Pavel Marchanka on 6/24/19.
 //  Copyright © 2019 Pavel Marchanka. All rights reserved.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-public extension Array where Element == FlowOutputAction {
-    func isEqualTo(_ other: [FlowOutputAction]) -> Bool {
+public extension Array where Element == FeatureFlowCommand {
+    func isEqualTo(_ other: [FeatureFlowCommand]) -> Bool {
         guard self.count == other.count else { return false }
         guard self.count > 0 else { return true }
         

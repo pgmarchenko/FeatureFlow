@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'AppFlow' do
+target 'FeatureFlow' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -9,7 +9,7 @@ target 'AppFlow' do
   pod 'RxCocoa', :git => 'https://github.com/beathead-team/RxSwift.git'
 end
 
-target 'AppFlowTests' do
+target 'FeatureFlowTests' do
   use_frameworks!
   inherit! :search_paths
   

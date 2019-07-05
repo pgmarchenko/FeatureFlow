@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AppFlowVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AppFlowVersionString[];
+FOUNDATION_EXPORT double Pods_FeatureFlowVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_FeatureFlowVersionString[];
 
